@@ -6,10 +6,11 @@ header
 	height: 24px
 	width: 112px
 	padding: 5px 12px
-	background-color: #000000
+	background-color: $second-color
 	color: #ffffff
+	font-family: 'Uber Move',system-ui, Helvetica Neue, Helvetica, Arial, sans-serif 
 	font-size: 11px
-	font-weight: 300
+	font-weight: 500
 	text-transform: uppercase
 	&_white
 		margin-top: 57px
@@ -17,31 +18,31 @@ header
 		margin: 0 auto
 		padding: 5px 12px
 		font-style: normal
-		font-weight: 400px
+		font-family: 'Uber Move',system-ui, Helvetica Neue, Helvetica, Arial, sans-serif 
 		font-size: 11px
 		align-items: center
 		text-align: center
 		text-transform: uppercase
-		color: #070716
+		color: white  
 		width: 115px
 		height: 27px
-		background: #FFFFFF	
+		background: $second-color
+		z-index: 1
+
 		
 .btn
 	&_header
 		margin-top: 19px
 		width: 172px
 		height: 46px
-		box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
 		border: none
-		border-radius: 4px
-		background-image: linear-gradient(to top, white 0%, white 100%)
-		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
-		color: black 
-		font-size: 14px
-		font-weight: 400
+		border-radius: 0
+		color: black
+		font-family: 'Uber Move',system-ui, Helvetica Neue, Helvetica, Arial, sans-serif  
+		font-size: 15px
+		font-weight: 500
 		text-transform: uppercase
-		@include hover
+		@include hover2
 	&_promo
 		display: block
 		margin: 118px auto 0 auto
@@ -53,16 +54,17 @@ header
 		background-image: linear-gradient(to top, black 0%, black 100%)
 		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
 		color: #ffffff
+		font-family: 'Uber Move',system-ui, Helvetica Neue, Helvetica, Arial, sans-serif 
 		font-size: 18px
 		font-weight: 400
 		text-transform: uppercase
-		@include hover2
+		@include hover
 
 
 
 nav
 	height: 50px
-	background: #212121
+	background: #000 
 
 .hamburger
 	display: none
@@ -75,13 +77,14 @@ nav
 	list-style-type: none
 	position: sticky
 	&_link
+		font-family: "Uber Text" ,system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif 
 		font-size: 15px
-		font-weight: 300
+		font-weight: 500
 		align-items: center
 		color: #FFFFFF
 		text-decoration: none
 	&_item
-		border-right: 2px dotted black
+		border-right: 2px dotted black 
 		padding-right: 40px
 .menu_item
     &:last-child
@@ -100,8 +103,9 @@ nav
 		max-width: 100%
 		cursor: pointer
 	&_text
+		margin-top: 10px
 		font-style: normal
-		font-weight: 200
+		font-weight: 500
 		font-size: 13px
 		align-items: center
 		opacity: .6
@@ -112,7 +116,7 @@ nav
 		margin-top: 19px
 		height: 14px
 		font-style: normal
-		font-weight: 300
+		font-weight: 500
 		font-size: 12px
 		align-items: center
 		text-align: right
@@ -120,8 +124,8 @@ nav
 	&_num
 		display: block
 		font-style: normal
-		font-weight: normal
-		font-size: 22px
+		font-weight: 500
+		font-size: 26px
 		align-items: center
 		text-align: right
 		text-transform: uppercase
@@ -175,9 +179,9 @@ nav
 		margin-top: 35px
 	&_uptitle
 		line-height: 21px
-		color: #1eacc7
+		color: $main-color
 		font-size: 17px
-		font-weight: 400
+		font-weight: 500
 	&_text
 		color: #202020
 		font-size: 15px
@@ -190,7 +194,7 @@ nav
 		margin-right: 26px
 		width: 113px
 		height: 113px
-		background-color: #1eacc7
+		background-color: $main-color 
 		border-radius: 100%
 	&_descr
 		width: 343px
@@ -273,11 +277,6 @@ nav
 			&:hover
 				&:before, &:after
 					background-color: $second-color 
-					
-					
-
-
-
 .auto
 	position: relative
 	min-height: 895px
@@ -339,10 +338,10 @@ nav
 		&_nmb
 			margin-bottom: 0px
 		&_title
-			font-weight: normal
+			font-weight: 500
 			font-size: 22px
 			align-items: center
-			color: #1CA8C3
+			color: $main-color 
 		&_list
 			list-style-type: none 
 			padding-left: 50px
@@ -364,21 +363,21 @@ nav
 					position: absolute
 					width: 21px
 					height: 20px
-					background-image: url('../icons/check_blue .svg') 
+					background-image: url('../icons/check.svg') 
 		&_text
 			font-style: normal
-			font-weight: 300
+			font-weight: 500
 			font-size: 17px
 			align-items: center
-			color: #1CA8C3
+			color: $main-color 
 		.warning
-			font-weight: normal
+			font-weight: 500
 			font-size: 22px
 			align-items: center
-			color: $second-color
+			color: $main-color
 			li
 				&:before
-					background-image: url('../icons/check_red.svg') 
+					background-image: url('../icons/check.svg') 
 
 .world
 	min-height: 720px
@@ -387,8 +386,9 @@ nav
 	&_lable
 		display: block
 		margin: 0 auto 
+		font-family: 'Uber Text' ,system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif 
 		font-style: normal
-		font-weight: normal
+		font-weight: 500
 		font-size: 11px
 		align-items: center
 		text-align: center
@@ -428,7 +428,7 @@ nav
 		align-items: center
 		text-align: center
 		text-transform: uppercase
-		color: #1FBAD6
+		color: $second-color 
 		&:hover 
 			text-decoration: none
 			color: white
@@ -443,7 +443,7 @@ footer
 	&_divider
 		width: 299px
 		height: 4px
-		background-color: #1fbad6
+		background-color: $second-color
 		margin: 0 auto
 	&_wrapper
 		display: flex 
@@ -494,7 +494,7 @@ footer
 		&_lang 
 			display: block 
 			margin: 0 auto
-			color: #1fbad6
+			color: $second-color
 			font-size: 11px
 			font-weight: 400
 			margin-top: 19px
